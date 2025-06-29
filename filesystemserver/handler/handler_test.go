@@ -20,7 +20,7 @@ func resolveAllowedDirs(t *testing.T, dirs ...string) []string {
 		require.NoError(t, err, "Failed to resolve symlinks for directory: %s", dir)
 
 		if resolvedPath != dir {
-			allowedDirs = append(allowedDirs, resolvedPath)
+			//allowedDirs = append(allowedDirs, resolvedPath)
 		}
 	}
 	return allowedDirs
